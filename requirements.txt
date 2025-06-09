@@ -1,0 +1,10 @@
+streamlit==1.22.0
+opencv-python==4.7.0.72
+facenet_pytorch==2.6.0
+torch==2.2.2
+torchvision==0.17.2
+scikit-learn==1.2.2
+pandas==1.5.3
+numpy==1.24.3
+pillow==10.2.0
+protobuf==3.20.1
