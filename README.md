@@ -14,61 +14,46 @@ An intelligent, face-recognition-based attendance management system built using 
 - 🔐 **Admin Panel**: Protected access to student details and full attendance logs.
 
 ---
+## 🧪 Usage Flow
 
+### 📌 Register Student
+- Navigate to **Registration**.
+- Enter **Enrollment Number** & **Name**.
+- Click **"Capture 50 Images Automatically"**.
 
-└── face_recognition.py # FaceNet + MTCNN model handling
+### 🧠 Train Model
+- Go to the **Train** section.
+- Click **"Train Model"** to update the FaceNet classifier.
 
-Usage Flow
-Register Student
+### 📷 Mark Attendance
+- Go to **Automatic Attendance**.
+- Enter the **Subject**, capture a **webcam image**, and click **"Mark Attendance"**.
 
-Navigate to "Registration"
+### ✍️ Manual Attendance
+- Used for **fallback entry or corrections**.
 
-Enter enrollment number & name
+### 🔐 Admin Panel
+- **Username**: ``  
+- **Password**: ``  
+- View **registered students** and **attendance logs**.
 
-Click "Capture 50 Images Automatically"
+---
 
-Train Model
+## 🧠 Model Details
 
-Go to "Train"
+- **Face Detection**: MTCNN  
+- **Face Embedding**: FaceNet (`InceptionResnetV1`)  
+- **Classifier**: Linear SVM trained on face embeddings  
+- **Threshold**: Confidence score ≥ `0.6` to accept a prediction
 
-Click "Train Model" to update FaceNet classifier
+---
 
-Mark Attendance
+## 💡 Future Improvements
 
-Go to "Automatic Attendance"
-
-Enter subject, capture webcam image, and click "Mark Attendance"
-
-Manual Attendance
-
-For fallback entry or corrections
-
-Admin Panel
-
-Username: Zayed
-
-Password: Zayed123
-
-View registered students and attendance logs
-
- Model Details
-Face Detection: MTCNN
-
-Face Embedding: FaceNet (InceptionResnetV1)
-
-Classifier: Linear SVM trained on face embeddings
-
-Threshold: Confidence score ≥ 0.6 to accept a prediction
-
- Future Improvements
-🧾 Export attendance to CSV/Excel
-
-🔄 Real-time attendance stream with continuous video feed
-
-☁️ Cloud-based storage (Firebase or AWS)
-
-🧬 Enhanced face preprocessing (augmentation, lighting normalization)
-
-🔒 Encrypted login for multiple admin roles
+- 🧾 Export attendance to **CSV/Excel**
+- 🔄 Real-time attendance stream with **continuous video feed**
+- ☁️ Cloud-based storage (**Firebase** or **AWS**)
+- 🧬 Enhanced face preprocessing (**augmentation**, **lighting normalization**)
+- 🔒 Encrypted login for **multiple admin roles**
 
 
